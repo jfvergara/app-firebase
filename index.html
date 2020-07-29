@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCuKaYots7HTVpgFe0aQ0j7iTElJYVLAeU",
+        authDomain: "usuarios-36009.firebaseapp.com",
+        databaseURL: "https://usuarios-36009.firebaseio.com",
+        projectId: "usuarios-36009",
+        storageBucket: "usuarios-36009.appspot.com",
+        messagingSenderId: "324178412294",
+        appId: "1:324178412294:web:3e2b6cd968cd816ad29487",
+        measurementId: "G-8WBYFKT7LB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+</head>
+<body>
+    <h4>Registro de usuarios</h4>
+    <input id="email" type="email" placeholder="Enter email">
+    <input id="contrasena" type="password" placeholder="Enter password">
+    <button onclick="registrar()">Send</button>
+
+    <h4>Ingreso de usuarios</h4>
+    <input id="email2" type="email" placeholder="Enter email">
+    <input id="contrasena2" type="password" placeholder="Enter password">
+    <button onclick="ingreso()">Access</button>
+
+    <div id="contenido">
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
